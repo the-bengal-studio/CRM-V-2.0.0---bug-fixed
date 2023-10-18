@@ -1,0 +1,81 @@
+/* Start Map Styles */
+
+#google-map,
+#google-map-overlay,
+#map-layers,
+#map-markers,
+#streetview-map,
+#map-geofencing {
+  @apply h-72;
+}
+
+#map,
+#map1,
+#map-popup,
+#map-custom-icon,
+#interactive-map {
+  @apply h-72;
+}
+
+#vector-map,
+#marker-map,
+#marker-image-map,
+#lines-map,
+#us-map,
+#canada-map,
+#spain-map,
+#russia-map {
+  @apply h-80;
+}
+
+.jvm-tooltip {
+  @apply bg-primary #{!important};
+}
+.leaflet-pane {
+  @apply z-10 #{!important};
+}
+.leaflet-top,
+.leaflet-bottom {
+  @apply z-10 #{!important};
+}
+.jvm-zoom-btn {
+  @apply leading-[6px] dark:bg-white dark:text-gray-800 rtl:right-3 rtl:left-0 #{!important};
+}
+.leaflet-marker-icon {
+  @apply w-7 h-7 #{!important};
+}
+#jvm-markers-labels-group {
+  text {
+    @apply dark:fill-white;
+  }
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  @apply touch-none h-[18rem];
+}
+
+#map1,
+#map-custom-icon {
+  .leaflet-pane {
+    &.leaflet-yellow-rectangle-pane,
+    &.leaflet-overlay-pane {
+      path[class="leaflet-interactive"] {
+        @apply stroke-[rgb(var(--color-primary))] fill-[rgb(var(--color-primary))] #{!important};
+      }
+    }
+  }
+}
+#interactive-map {
+  .leaflet-pane.leaflet-overlay-pane {
+    svg {
+      rect[x="0"] {
+        @apply fill-[rgb(var(--color-primary))] #{!important};
+      }
+    }
+  }
+}
+
+.rsm-svg {
+  @apply h-[320px] w-full;
+}
+/* End Map Styles */

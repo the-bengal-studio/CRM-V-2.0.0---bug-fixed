@@ -1,0 +1,16 @@
+/* Start Menu-Scrollable Styles */
+[data-menu-position="scrollable"] {
+  .app-sidebar {
+    @apply absolute;
+
+    #sidebar-scroll {
+      @apply h-screen pb-0;
+    }
+  }
+  &:not([data-nav-layout="horizontal"]) {
+    .content {
+      @apply min-h-[1300px];
+    }
+  }
+}
+/* End Menu-Scrollable Styles */

@@ -1,0 +1,179 @@
+/* Start Custom Css Styles */
+
+/*** custom styles ***/
+::-webkit-scrollbar {
+  @apply w-[4px] bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply w-[4px] rounded-md;
+}
+
+::-webkit-scrollbar {
+  @apply w-[2px] bg-transparent #{!important};
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[10px] bg-bodybg #{!important};
+}
+
+.style1 {
+  @apply fixed m-0 translate-x-[1686px] -translate-y-[243px] top-auto right-auto bottom-0 left-0;
+}
+
+@media (min-width: 480px) {
+  .bannertext-center {
+    @apply inset-x-[25%];
+  }
+}
+
+/***** simplebar styles *****/
+.activity-scroll {
+  .simplebar-wrapper {
+    .simplebar-placeholder {
+      @apply hidden #{!important};
+    }
+
+    .simplebar-content-wrapper {
+      @apply h-[230px] #{!important};
+    }
+  }
+}
+
+//switcher primary color picker
+.color-picker-input {
+  input {
+    @apply w-8 h-8 rounded-[0.5rem] cursor-pointer relative mt-[0.25rem];
+
+    &::before {
+      @apply content-["\efc3"] font-['remixicon'] text-white/70 leading-loose absolute z-30 top-[2px] left-[9px] #{!important};
+    }
+  }
+
+  input[type="color" i]::-webkit-color-swatch {
+    @apply border border-[#5e76a6] bg-[#5e76a6] rounded-[0.5rem] #{!important};
+  }
+
+  input[type="color" i]::-webkit-color-swatch-wrapper {
+    @apply p-0 absolute top-0;
+  }
+}
+
+/**** widgets page styles *****/
+.user-by-country {
+  .worldmap__figure-container {
+    @apply overflow-auto;
+  }
+}
+
+.css-8p80kh-DropDown {
+  @apply max-h-24 #{!important};
+}
+
+.echarts-for-react.chartsh {
+  @apply z-[46] #{!important};
+}
+
+.ti-switch::before {
+  content: var(--tw-content);
+}
+
+/***** rtl styles *****/
+// @media (min-width: 992px){
+//   [dir=rtl]{
+//     &[data-nav-layout=horizontal]{
+//       .app-sidebar .main-sidebar {
+//         @apply hidden;
+//       }
+//     }
+//   }
+// }
+
+/***** dark styles ****/
+.dark {
+  ::-webkit-scrollbar {
+    @apply w-[4px] bg-bgdark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply w-[4px] rounded-md;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-[2px] bg-bgdark #{!important};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-[10px] w-[5px] bg-bodybg #{!important};
+  }
+
+  .user-by-country {
+    figure[class="worldmap__figure-container"] {
+      @apply bg-bgdark #{!important};
+
+      path {
+        @apply stroke-[#fff] #{!important};
+      }
+    }
+  }
+
+  .css-1c99szj-MuiRating-icon {
+    @apply text-white/30 #{!important};
+  }
+
+  .css-kglq79-MuiRating-root .MuiRating-iconEmpty .MuiSvgIcon-root {
+    @apply text-white/30 #{!important};
+  }
+
+  ::file-selector-button {
+    @apply bg-bodybg text-white/50 #{!important};
+  }
+}
+
+.multiple-dropdown-selct {
+  .react-dropdown-select-dropdown {
+    @apply h-[94px];
+  }
+}
+
+#tree .MuiTreeItem-label {
+  @apply rtl:pr-[6px] #{!important};
+}
+
+.react-dropdown-select-input {
+  @apply focus:shadow-none focus:ring-transparent #{!important};
+}
+
+.filepond--panel-root {
+  @apply bg-transparent border-dotted border-[0px] border border-gray-200 dark:border-white/10 #{!important};
+}
+
+.filepond--panel-top.filepond--panel-root {
+  @apply border-[0px] border-gray-200 dark:border-white/10 #{!important};
+}
+
+.filepond--panel-bottom.filepond--panel-root {
+  @apply border-[0px] border-gray-200 dark:border-white/10 #{!important};
+}
+.filepond--panel-center.filepond--panel-root {
+  @apply border-[1px] border-gray-200 border-dotted dark:border-white/10 rounded-sm #{!important};
+}
+.box-nav-tabs {
+  .react-select__control {
+    @apply border-t-0 border-x-0 border-b rounded-none;
+  }
+  #react-select-2-listbox {
+    .active,
+    .select,
+    .isSelected,
+    .isFocused {
+      @apply bg-primary #{!important};
+    }
+  }
+}
+
+@media (min-width: 992px){
+  [data-nav-layout=horizontal] .landing-body .app-sidebar .side-menu__item.active {
+      color: rgb(var(--color-primary)) !important;
+  }
+}

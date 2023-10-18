@@ -1,0 +1,84 @@
+/* Start React input tag Styles */
+
+// .rti--container {
+//   @apply border-0 #{!important};
+// }
+.tag-select-input .rti--container {
+  @apply border border-gray-200 dark:border-white/70;
+  .rti--input {
+    @apply p-0;
+  }
+  &:focus-within {
+    @apply border-primary shadow-[0_0_0_1px] shadow-primary;
+  }
+}
+
+// .rti--container:focus-within {
+//   @apply border-0 shadow-none #{!important};
+// }
+
+// .rti--container:focus-within {
+//   @apply border-0 shadow-none #{!important};
+// }
+.rti--container {
+  .rti--tag {
+    @apply py-1 pe-0 ps-2 rounded-[1rem] leading-[initial] #{!important};
+    span {
+      @apply text-[12px] font-medium;
+    }
+    button {
+      @apply text-[11px] font-medium;
+    }
+  }
+}
+
+.product-tags .rti--container .rti--input {
+  @apply border-0 w-[130px] #{!important};
+}
+
+.skills-box {
+  .rti--container {
+    @apply p-0 #{!important};
+  }
+}
+.product-tags-section {
+  .rti--container {
+    @apply border border-[#e2e8f0] #{!important};
+  }
+}
+.rti--tag button:hover {
+  @apply text-primary #{!important};
+}
+.rti--container .rti--input {
+  @apply border border-[#e2e8f0] #{!important};
+}
+.dark {
+  .rti--input {
+    @apply placeholder:text-white/70 #{!important};
+  }
+  .product-tags-section {
+    .rti--container {
+      @apply border-white/10 bg-bgdark text-white/70 #{!important};
+      .rti--tag {
+        @apply bg-bodybg #{!important};
+      }
+    }
+  }
+  .rti--container {
+    @apply bg-bgdark #{!important};
+  }
+  .rti--tag {
+    @apply border-white/10 bg-bodybg text-white/70 #{!important};
+  }
+  .rti--container .rti--input {
+    @apply border-white/10 #{!important};
+  }
+}
+
+[dir="rtl"] {
+  .rti--container {
+    .rti--tag {
+      @apply py-1 px-2 #{!important};
+    }
+  }
+}

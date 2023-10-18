@@ -1,0 +1,159 @@
+/* Start React multi select Styles */
+
+[dir="rtl"] {
+  .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+  .basic-dropdown-svg {
+    .react-dropdown-select {
+      .react-dropdown-select-dropdown-handle svg {
+        @apply ms-[10px] #{!important};
+      }
+    }
+  }
+  .react-dropdown-select {
+    @apply dir-rtl;
+  }
+  .react-dropdown-select-option-remove {
+    @apply -mt-[1px] -me-[3px] mb-1 -ms-[4px];
+  }
+}
+
+.react-dropdown-select {
+  @apply shadow-none border-[#e2e8f0] #{!important};
+}
+
+.react-dropdown-select-dropdown {
+  @apply top-[34px] border border-[#e2e8f0] shadow-sm p-0 #{!important};
+}
+
+.multiple-select {
+  input {
+    @apply mx-[10px] border-[#e2e8f0] #{!important};
+  }
+}
+.multiple-select .dropdown-content div {
+  @apply border-[#e2e8f0] text-[#475569] #{!important};
+}
+.dropdown-container:focus-within {
+  @apply shadow-none #{!important};
+}
+
+.dropdown-container {
+  @apply bg-bodybg border-[#e2e8f0] #{!important};
+}
+.react-dropdown-select-item-selected {
+  @apply bg-bodybg border-[#e2e8f0] text-[#475569] #{!important};
+}
+.react-dropdown-select-item:hover {
+  @apply bg-bodybg border-[#e2e8f0] text-[#475569] #{!important};
+}
+
+.select__menu-list {
+  @apply bg-[rgb(var(--color-primary))] #{!important};
+}
+
+.Select__option:hover {
+  @apply bg-[rgb(var(--color-primary))] #{!important};
+}
+
+.Select__option--is-selected,
+.Select__option--is-focused {
+  @apply bg-[rgb(var(--color-primary))] #{!important};
+}
+
+.dark {
+  .multiple-select {
+    .dropdown-content {
+      div {
+        @apply bg-bgdark #{!important};
+      }
+    }
+  }
+
+  .rmsc .gray {
+    @apply text-white/70;
+  }
+  .rmsc {
+    input:focus {
+      @apply bg-bodybg #{!important};
+    }
+  }
+  .multi-select .dropdown-content {
+    @apply bg-bgdark;
+
+    label {
+      &:hover {
+        @apply bg-bgdark;
+      }
+      &.selected {
+        @apply bg-bgdark;
+      }
+    }
+  }
+
+  .multiple-selct {
+    .dropdown-content {
+      .dropdown-item {
+        &:is(:focus, :hover, :active, .active) {
+          @apply bg-bgdark #{!important};
+        }
+      }
+    }
+  }
+  .react-dropdown-select {
+    @apply border-white/10 #{!important};
+  }
+  input {
+    @apply border-white/10 bg-bgdark text-white/70;
+  }
+
+  .react-dropdown-select-input {
+    @apply placeholder:text-white/70 #{!important};
+  }
+
+  .react-dropdown-select-dropdown {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .react-dropdown-select-item {
+    @apply border-white/10 #{!important};
+  }
+  .react-dropdown-select-item:hover {
+    @apply bg-black/10;
+  }
+  .react-dropdown-select-item-selected {
+    @apply border-white/10 #{!important};
+  }
+  .dropdown-container {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+
+  .react-dropdown-select-item-selected {
+    @apply border-white/10 bg-bodybg text-white/70 #{!important};
+  }
+  .react-dropdown-select-item:hover {
+    @apply border-white/10 bg-bodybg text-white/70 #{!important};
+  }
+  .multiple-select .dropdown-content {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .multiple-select .dropdown-content div {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .multiple-select {
+    input {
+      @apply border-white/10 #{!important};
+    }
+  }
+}
+.multiple-dropdown-selct {
+  .react-dropdown-select {
+    input {
+      @apply w-full focus:border-transparent focus:shadow-none #{!important};
+    }
+  }
+}
+
+.react-dropdown-select-option {
+  @apply bg-primary  my-1 ms-2 me-0 #{!important}
+}

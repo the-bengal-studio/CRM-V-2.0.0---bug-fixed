@@ -1,0 +1,152 @@
+/* Start React-Select  Styles */
+
+.billing-search .react-select__control {
+  @apply border-0 bg-white #{!important};
+}
+.react-select__control {
+  @apply bg-white #{!important};
+}
+
+.select-sizes .react-select__control {
+  @apply border-0 outline-0 border-white shadow-none #{!important};
+}
+.react-select__indicator-separator {
+  @apply bg-bodybg #{!important};
+}
+
+.react-select__indicator-separator {
+  @apply hidden #{!important};
+}
+.react-select__control {
+  @apply border-[#e2e8f0] #{!important};
+}
+
+.react-select__indicator.react-select__dropdown-indicator {
+  @apply text-white/70 #{!important};
+}
+.react-select__control,
+.react-select__value-container {
+  @apply shadow-none #{!important};
+}
+@media (max-width: 360px) {
+  .totdolist {
+    .react-select__control {
+      @apply w-[80%];
+    }
+  }
+}
+@media (max-width: 380px) {
+  .task-choice {
+    .react-select__control {
+      @apply w-[85%];
+    }
+  }
+}
+.Select2__menu {
+  div {
+    @apply border-[1px] border-white/10 #{!important};
+    div {
+      @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg border-0 #{!important};
+    }
+  }
+}
+.react-select__option--is-selected,
+.react-select__option--is-focused {
+  @apply bg-primary text-white #{!important};
+}
+.dark {
+  .Select2__option {
+    @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg #{!important};
+  }
+  .Select2__menu {
+    div {
+      @apply border-[1px] border-white/10 #{!important};
+      div {
+        @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg border-0 #{!important};
+      }
+    }
+  }
+  .css-1dimb5e-singleValue {
+    @apply text-white/40;
+  }
+
+  select {
+    @apply bg-bgdark border-white/10 text-white/30;
+  }
+  .css-1nmdiq5-menu {
+    @apply bg-bgdark border-white/10 #{!important};
+    div {
+      &:hover,
+      &:focus,
+      &.active,
+      &:active {
+        @apply bg-bgdark border-white/10 text-white #{!important};
+      }
+    }
+  }
+  .react-select__menu {
+    @apply bg-white mt-[1px] border-white/10 #{!important};
+  }
+  .react-select__options:hover {
+    @apply bg-bgdark text-white/70 #{!important};
+  }
+  .react-select__option--is-selected,
+  .react-select__option--is-focused {
+    @apply bg-bgdark text-white/70 #{!important};
+  }
+  .react-select__indicator-separator {
+    @apply bg-bgdark #{!important};
+  }
+  .react-select__control {
+    @apply bg-bgdark text-white/70 border #{!important};
+  }
+  .billing-search .react-select__control {
+    @apply border-0 border-black/20 #{!important};
+  }
+  .react-select__menu {
+    @apply border-white/10 bg-bgdark #{!important};
+  }
+  .react-select__options:hover {
+    @apply bg-bodybg text-[#475569] #{!important};
+  }
+  .react-select__option--is-selected,
+  .react-select__option--is-focused {
+    @apply bg-primary text-white #{!important};
+  }
+  .react-select__control,
+  .css-t3ipsp-control {
+    @apply bg-bgdark border-white/10 #{!important};
+    &:is(:hover, :focus, .active, :active) {
+      @apply border-white/20 #{!important};
+    }
+    .react-select__placeholder {
+      @apply text-white/70;
+    }
+  }
+  .react-select__indicator.react-select__dropdown-indicator svg {
+    @apply fill-[white]/70;
+  }
+  .select-sizes {
+    .react-select__control {
+      @apply border-transparent #{!important};
+    }
+  }
+  .react-select__control {
+    @apply bg-bodybg;
+  }
+  .react-select__multi-value {
+    @apply bg-bodybg;
+    .react-select__multi-value__label {
+      @apply text-white;
+    }
+  }
+  .react-select__control {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .react-select__menu {
+    @apply bg-bgdark text-white/70 #{!important};
+  }
+  .react-select__control--is_focused {
+    @apply outline-white/10 #{!important};
+  }
+}

@@ -1,0 +1,143 @@
+/* Start Suneditor  Styles */
+
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-dialog-form-files>input {
+    @apply shadow-none;
+  }
+  .sun-editor { 
+    @apply font-inter font-medium;
+  }
+  .sun-editor .se-dialog .se-dialog-inner .se-dialog-content label {
+    @apply font-normal;
+  }
+  .sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-input-control {
+    @apply shadow-none;
+  }
+  .sun-editor {
+    input,
+    select,
+    textarea {
+      @apply focus:border focus:border-white/10 focus:shadow-none;
+    }
+  }
+  .sun-editor .se-toolbar {
+    @apply text-[#808793] border-[#e2e8f0] bg-white #{!important};
+  }
+  .sun-editor {
+    @apply text-[#808793] border-[#e2e8f0] bg-white #{!important};
+  }
+  .sun-editor .se-btn-module-border {
+    @apply border-[#e2e8f0] #{!important};
+  }
+  .sun-editor .se-toolbar {
+    @apply outline-[#e2e8f0] #{!important};
+  }
+  .sun-editor .se-resizing-bar {
+    @apply bg-white border-[#e2e8f0] #{!important};
+  }
+  .sun-editor .se-btn:enabled:focus, .sun-editor .se-btn:enabled:hover {
+    @apply bg-bodybg border-[#e2e8f0] outline-0 #{!important};
+  }
+  .sun-editor button {
+    @apply text-[#475569];
+  }
+  .sun-editor .se-btn-select>svg {
+    @apply ms-[5px] me-[10px] #{!important};
+  }
+  .dark {
+  .sun-editor {
+    .se-controller {
+      @apply bg-bodybg border-white/10;
+    }
+    .se-btn-group button:hover:enabled {
+      @apply bg-white/10 border-white/10 outline-0;
+    }
+    .se-arrow.se-arrow-up:after {
+      @apply -ms-[11px] border-b-bodybg;
+    }
+    .se-dialog .se-dialog-inner input:disabled {
+      @apply bg-bgdark #{!important};
+    }
+    .se-dialog .se-dialog-inner .se-dialog-btn-revert {
+      @apply border-white/10;
+    }
+    .se-dialog .se-dialog-inner .se-dialog-form .se-dialog-form-files .se-dialog-files-edge-button {
+      @apply border-white/10 hover:bg-bgdark;
+    }
+  } 
+  .sun-editor .se-toolbar {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .sun-editor {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .sun-editor-editable {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .sun-editor .se-resizing-bar .se-navigation {
+    @apply border-white/10 bg-bgdark text-white/70 #{!important};
+  }
+  .sun-editor button {
+    @apply text-white/70 #{!important};
+  }
+  .sun-editor .se-btn-module-border {
+    @apply border-white/10 #{!important};
+  }
+  .sun-editor .se-toolbar {
+    @apply outline-white/10 #{!important};
+  }
+  .sun-editor .se-resizing-bar {
+    @apply border-white/10 bg-bgdark #{!important};
+  }
+  .sun-editor .se-btn:enabled:focus, .sun-editor .se-btn:enabled:hover {
+    @apply bg-bgdark border-white/10 outline-0 #{!important};
+  }
+  .sun-editor button {
+    @apply text-white/70 #{!important};
+  }
+  .sun-editor {
+    .se-selector-table {
+      @apply bg-bodybg border-white/20 shadow-sm #{!important};
+    }
+    .se-dialog .se-dialog-inner .se-dialog-content {
+      @apply bg-bodybg border-white/20 shadow-sm #{!important};
+    }
+    .se-dialog-tabs {
+      @apply border-b-white/20 #{!important};
+    }
+    .se-dialog .se-dialog-inner .se-dialog-header {
+      @apply border-b-white/20 #{!important};
+    }
+    .se-dialog-tabs button {
+      @apply bg-bgdark border-r-white/20 #{!important};
+    }
+    .se-dialog label,
+    .se-dialog input {
+      @apply text-white;
+    }
+    .se-dialog-footer button {
+      @apply text-dark #{!important};
+    }
+    .se-dialog .se-dialog-inner .se-dialog-footer {
+      @apply border-t-white/20;
+    }
+  } 
+  .sun-editor {
+    .se-btn:enabled.on {
+      @apply bg-bodybg border-white/10 #{!important};
+    }
+    .se-list-layer {
+      @apply bg-bodybg border-white/10 #{!important};
+    }
+    .se-btn-list {
+      @apply hover:bg-bgdark  focus:bg-bgdark #{!important};
+
+      &.default_value {
+        @apply bg-bgdark border-y-white/10 #{!important};
+      }
+    }
+  }
+}
+
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-input-form {
+  @apply px-0 #{!important};
+}

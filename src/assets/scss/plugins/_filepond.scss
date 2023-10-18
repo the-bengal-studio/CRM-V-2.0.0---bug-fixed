@@ -1,0 +1,60 @@
+/* Start React filepond Styles */
+
+.filepond.circular-filepond .filepond--panel-root {
+  @apply rounded-[50%] #{!important};
+}
+.filepond--panel-root {
+  @apply bg-bodybg #{!important};
+}
+.filepond--drop-label {
+  @apply dark:text-white/70 #{!important};
+}
+.filepond--credits {
+  @apply hidden;
+}
+
+//Dropzone Uploader Plugins
+
+@media (max-width: 450px) {
+  .dropzone-file-upload {
+    .dzu-dropzone {
+      .dzu-previewContainer {
+        @apply flex flex-col items-center;
+        img {
+          @apply mb-2;
+        }
+      }
+    }
+  }
+}
+
+.dzu-inputLabel {
+  @apply ms-5 #{!important};
+}
+.dzu-dropzone {
+  @apply bg-gray-100 border-[#e2e8f0] border dark:border-white/10  overflow-auto #{!important};
+}
+.dzu-inputLabel {
+  @apply text-[#475569] dark:text-white font-normal #{!important};
+}
+.dzu-submitButton {
+  @apply bg-primary text-white #{!important};
+  &:disabled {
+    @apply bg-gray-500 text-gray-900 #{!important};
+  }
+}
+.dzu-inputLabelWithFiles {
+  @apply bg-gray-200 text-gray-900 #{!important};
+}
+.dark {
+  .dzu-dropzone {
+    @apply bg-white/10 #{!important};
+  }
+
+  .dzu-inputLabel {
+    @apply text-white/70 #{!important};
+  }
+}
+.dzu-previewContainer {
+  @apply border-b-[1px] border-white/10 #{!important};
+}

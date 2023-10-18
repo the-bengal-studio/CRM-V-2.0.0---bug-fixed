@@ -1,0 +1,42 @@
+@import "../src/assets/iconfonts/RemixIcons/fonts/remixicon.css";
+@import "../src/assets/iconfonts/tabler-icons/webfont/tabler-icons.css";
+@import "swiper/css"; //swiper css
+@import "swiper/css/free-mode";  //swiper free mode
+@import "swiper/css/navigation";  //Swiper navigation
+@import "swiper/css/thumbs";  // swiper thumbs
+@import "swiper/css/pagination"; // swiper pagination
+@import "swiper/css/scrollbar"; // swiper scrollbar
+@import "swiper/css/effect-cube"; // swiper effect-cube
+@import "swiper/css/effect-cards";  // swiper effect-cards
+@import "swiper/css/zoom";  //Swipper Zoom css
+@import "swiper/css/effect-fade";  // swiper effect-fade
+@import "swiper/css/effect-flip";  //  effective flip css
+@import "swiper/css/free-mode"; //free mode css
+@import "react-datepicker/dist/react-datepicker.css"; //react-datepicker
+@import "react-calendar/dist/Calendar.css"; //  react Calendar
+@import "react-dropzone-uploader/dist/styles.css"; //react dropzone uploader
+@import "filepond/dist/filepond.min.css"; //file pond css
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"; //dependencies plugin css for react file pond package
+@import "react-quill/dist/quill.snow.css";
+@import "suneditor/dist/css/suneditor.min.css";
+@import "rc-slider/assets/index.css";
+@import 'react-tabulator/lib/styles.css';
+@import 'react-checkbox-tree/lib/react-checkbox-tree.css';
+@import 'react-tabulator/lib/styles.css'; // required styles
+@import 'react-tabulator/lib/css/tabulator.min.css'; // theme
+@import "react-range-slider-input/dist/style.css"; //rangeSliderinput
+
+@import "react-tabulator/lib/styles.css"; // default theme
+@import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css"; // use Theme(s)
+@import "react-tabulator/lib/css/bootstrap/tabulator_bootstrap.min.css";
+
+@import "@simonwep/pickr/dist/themes/classic.min.css"; // 'classic' theme
+@import "@simonwep/pickr/dist/themes/monolith.min.css"; // 'monolith' theme
+@import "@simonwep/pickr/dist/themes/nano.min.css"; // 'nano' theme
+
+//leaflet
+@import 'leaflet/dist/leaflet.css';
+@import '../src/assets/css/style.css';
+
+
+@import '../node_modules/react-dropzone-uploader/dist/styles.css'
