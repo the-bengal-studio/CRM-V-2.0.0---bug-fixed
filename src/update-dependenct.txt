@@ -1,0 +1,4 @@
+npm install -g npm-check-updates
+npx ncu
+npx ncu -u -t patch
+npm i
